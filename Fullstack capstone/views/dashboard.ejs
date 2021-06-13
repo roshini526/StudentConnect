@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Connect Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="dashboarddesign.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body style="background-color: #eddede">
+
+<div class = "navbar" style="background-color: #283e4a; height: 100px;">
+	<h3 style="color: white; margin-left: 30px;">Welcome to Student Connect !!</h3>
+	<a href="AddeventForm.html"><button class="btn btn-secondary" style="margin-left: 650px;">Add Event</button></a>
+	<a href="logoutpage.html"><button class="btn btn-secondary" style="margin-right: 100px;">Logout</button></a>
+</div>
+
+<h1 style="margin-bottom: 20px; margin-left: 500px; margin-top: 20px; color: #283e4a">Here are the events present...</h1>
+<% for(var i = 0; i < result.length; i++){ %>
+<div style="height: 400px; width: 1000px;background-color: #9e9e9ee6; margin-left: 250px; border-radius: 50px;margin-bottom:30px;">
+	<div style="color: #263238; padding-top: 50px; margin-left: 100px; font-size: 20px;">
+	<p>College Name  : <%= result[i].College %></p>
+	<p>Event Type    : <%= result[i].Event %></p>
+	<p>Time Period   :<%= result[i].Time_Period  %></p>
+	<p>Contact Number:<%= result[i].Contact_Number %></p>
+	<p>College Website link : <%= result[i].Link %></p> 
+	</div>
+</div>
+<% } %>
+
+</body>
+</html>

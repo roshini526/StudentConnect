@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Event Form</title>
+	<link rel="stylesheet" type="text/css" href="AddEvent.css">
+	<link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	<div>
+	<h1>Register your event here</h1>
+	<p class="paragraph">Let your event reach to everyone...</p>
+	</div>
+	<form action = "/addevent" method="GET" >
+	<div class = "Container">
+		<br>
+		<div class="textColour marginTop">
+		College Name
+		</div>
+		<div>
+			<input class = "boxClass" type = "text" placeholder="Enter your college name" name="collegename" >
+		</div>
+		<div class="textColour">
+		Event Type 
+		</div>
+		<div>
+			<input class = "boxClass" type = "text" placeholder="Enter event type.." name="event">
+		</div>
+		<div class="textColour">
+		Time Period
+		</div>
+		<div>
+			<input class = "boxClass" type = "text" placeholder="Timings of your event" name="time">
+		</div>
+		<div class="textColour marginTop">
+		Contact number
+		</div>
+		<div>
+			<input class = "boxClass" type = "text" placeholder="Enter your contact number" name="number">
+		</div>
+		<div class="textColour marginTop">
+		College website
+		</div>
+		<div>
+			<input class = "boxClass" type = "text" placeholder="college website link" name="link">
+		</div>
+		
+	<div>
+			<button class="btn btn-success" style="margin-left: 20px; margin-top: 20px; width: 88%;">Register</button>
+	</div>
+	<br>
+</div>
+</form>
+</body>
+</html>
